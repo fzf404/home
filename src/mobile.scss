@@ -1,0 +1,32 @@
+.friend {
+  max-width: 80%;
+  height   : 100px;
+
+  .avatar a img {
+    width : 60px;
+    height: 60px;
+  }
+}
+
+.me {
+  max-width: 80%;
+  height   : 280px;
+
+  .title h1 {
+    font-size: 2em;
+  }
+
+  .link a {
+    margin: 0;
+  }
+
+  .avatar a img {
+    width : 80px;
+    height: 80px;
+  }
+
+  .link a img {
+    width : 60px;
+    height: 60px;
+  }
+}
