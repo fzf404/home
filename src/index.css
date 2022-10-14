@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    transition: font-size 150ms;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+html {
+    background-color: antiquewhite;
+}
+
+h1 {
+    margin-top: 80px;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 280px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #1a777e;
+}
+
+a:hover {
+    color: #1a3a7e;
+    font-size: 34px;
+}
