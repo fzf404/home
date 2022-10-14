@@ -3,92 +3,192 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="public/favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" href="src/main.css">
-	<link rel="stylesheet" href="src/style.css">
-	<link media="(max-width: 800px)" rel="stylesheet" href="src/mobile.css">
-	<title>Home</title>
-	<script>
-		var _hmt = _hmt || [];
-		(function() {
-		  var hm = document.createElement("script");
-		  hm.src = "https://hm.baidu.com/hm.js?ce6f627f4d9496882b6dff4394398ed9";
-		  var s = document.getElementsByTagName("script")[0]; 
-		  s.parentNode.insertBefore(hm, s);
-		})();
-	</script>
+	<title>小fの首页</title>
+	<!-- css -->
+	<link rel="stylesheet" href="assets/css/index.css">
+	<!-- 移动端适配 -->
+	<link rel="stylesheet" href="assets/css/mobile.css">
+	<!-- 幻灯片效果 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
 </head>
 
 <body>
-	<div class="container">
-
-		<!-- My Space -->
-		<div class="me" id="me">
-			<div class="avatar">
-				<a href="https://fzf404.top">
-					<img src="public/avatar.jpg">
-				</a>
+	<!-- 导航栏 -->
+	<nav class="nav" id="nav">
+		<div class="nav-menu flex-row">
+			<div class="nav-brand">
+				<a href="#">fzf404</a>
 			</div>
-			<div class="title">
-				<h1>小fのHome</h1>
+			<div class="toggle-collapse">
+				<div class="toggle-icons">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-bars"></use>
+					</svg>
+				</div>
 			</div>
+			<div>
+				<ul class="nav-items">
+					<li class="nav-link" href="#nav">
+						Home
+					</li>
 
-			<!-- My Link -->
-			<div class="link">
-				<a href="https://github.com/fzf404" target="_blank">
-					<img src="public/links/github.png" alt="Github" title="Github">
+					<li class="nav-link" href="#title">
+						About
+					</li>
+					<li class="nav-link" href="#website">
+						Website
+					</li>
+					<li class="nav-link" href="#friend">
+						Friend
+					</li>
+				</ul>
+			</div>
+			<div class="social">
+				<a href="https://space.bilibili.com/66628023/">
+					<svg class="icon" aria-hidden="true" id="bili">
+						<use href="#icon-bilibili-line"></use>
+					</svg>
 				</a>
-				<a href="https://blog.fzf404.top" target="_blank">
-					<img src="public/links/blog.png" alt="Blog" title="Blog">
+				<a href="https://www.douban.com/people/169857273/">
+					<svg class="icon" aria-hidden="true" id="douban">
+						<use href="#icon-douban">bili</use>
+					</svg>
 				</a>
-				<a href="https://note.fzf404.top" target="_blank">
-					<img src="public/links/note.png" alt="Note" title="Note">
+				<a href="https://www.zhihu.com/people/fzf-78">
+					<svg class="icon" aria-hidden="true" id="zhihu">
+						<use href="#icon-zhihu"></use>
+					</svg>
 				</a>
-				<a href="https://tab.fzf404.top" target="_blank">
-					<img src="public/links/tabox.png" alt="Tab" title="Tab">
+				<a href="https://www.fzf404.top">
+					<svg class="icon" aria-hidden="true" id="back">
+						<use href="#icon-back"></use>
+					</svg>
 				</a>
 			</div>
 		</div>
+	</nav>
 
-		<!-- Friend Space -->
-		<div class="friend" id="friend">
-
-			<!-- DazeCake -->
-			<div class="avatar">
-				<a href="http://blog.dazecake.moe/">
-					<img src="https://cdn.jsdelivr.net/gh/DazeCake/image-host/blog/20210104222504.jpg" alt="DazeCake">
-				</a>
+	<!-- 主页主体 -->
+	<main>
+		<!-- 主页标题 -->
+		<section class="site-title" id="title">
+			<div class="site-intro">
+				<h1 id="intro"></h1>
+				<h3>Weclome To My HomePage.</h3>
+				<button class='btn' onclick="window.location.href='about/'">关于我</button>
 			</div>
-			<!-- AimerNeigeg -->
-			<div class="avatar">
-				<a href="https://aimerneige.com/">
-					<img src="https://avatars.githubusercontent.com/u/51701792?v=4" alt="AimerNeige">
-				</a>
-			</div>
-			<!-- shakaianee -->
-			<div class="avatar">
-				<a href="https://shakaianee.top/">
-					<img src="https://gravatar.loli.net/avatar/0bf16c751d119f1fb5e76d2bdef47fd4" alt="shakaianee">
-				</a>
-			</div>
-			<!-- zhanghao -->
-			<div class="avatar">
-				<a href="https://blog.hackerchai.com/">
-					<img src="https://avatars.githubusercontent.com/u/5574651" alt="Eason Chai">
-				</a>
-			</div>
+		</section>
 
-		</div>
+		<!-- 介绍 -->
+		<section class="container" id="website">
+			<div class="website">
+				<div class="website-post  owl-carousel owl-theme">
+					<div class="website-card">
+						<img src="assets/note.png" alt="">
+						<div class="website-title">
+							<h2>Blog</h2>
+							<span>闲来无事，发表议论。</span>
+							<a href="https://blog.fzf404.top/" target="_blank">
+								<button class="btn">Go</button>
+							</a>
+						</div>
+					</div>
+					<div class="website-card">
+						<img src="assets/blog.png" alt="">
+						<div class="website-title">
+							<h2>Note</h2>
+							<span>记性不好，第二大脑。</span>
+							<a href="https://note.fzf404.top/" target="_blank">
+								<button class="btn">Go</button>
+							</a>
+						</div>
+					</div>
+					<div class="website-card">
+						<img src="assets/github.png" alt="">
+						<div class="website-title">
+							<h2>Movie</h2>
+							<span>教案共享，知识分享。</span>
+							<a href="http://share.fzf404.top/" target="_blank">
+								<button class="btn">Go</button>
+							</a>
+						</div>
+					</div>
+					<div class="website-card">
+						<img src="assets/github.png" alt="">
+						<div class="website-title">
+							<h2>Tabox</h2>
+							<span>主页篡改，永远不来。</span>
+							<a href="https://tab.fzf404.top/" target="_blank">
+								<button class="btn">Go</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-		<!-- Foot -->
-		<div class="footer">
-			<p>©2021 Create by <a target="_blank" href="https://www.fzf404.top/">fzf404</a></p>
-		</div>
+		<!-- 友链 -->
+		<section class="container" id="friend">
+			<div class="friend">
+				<!-- 友链窗口 -->
+				<div class="friend-iframe">
+					<iframe src="link/" frameborder="0" width="100%" height="480px" id="friend-iframe"></iframe>
+				</div>
 
-	</div>
-	</div>
-	<script src="src/style.js"></script>
+				<ul class="friend-list" data-aos="animation_name">
+					<h2>友链</h2>
+					<li class="friend-card">
+						<img src="https://cdn.jsdelivr.net/gh/DazeCake/image-host/blog/20210104222504.jpg" alt="">
+						<h4>DazeCake</h4>
+						<a href="http://blog.dazecake.moe/" target="_blank">
+							<button class="btn">前往</button>
+						</a>
+					</li>
+					<li class="friend-card">
+						<img src="assets/img/aimerneige.jpeg" alt="">
+						<h4>aimerneige</h4>
+						<a href="https://aimerneige.com/" target="_blank">
+							<button class="btn">前往</button>
+						</a>
+					</li>
+					<li class="friend-card">
+						<img src="https://gravatar.loli.net/avatar/0bf16c751d119f1fb5e76d2bdef47fd4" alt="">
+						<h4>博客</h4>
+						<a href="https://shakaianee.top/" target="_blank">
+							<button class="btn">前往</button>
+						</a>
+					</li>
+					<li class="friend-card">
+						<img src="assets/img/null.png" alt="">
+						<h4>招租..</h4>
+						<a href="link/" target="_blank">
+							<button class="btn">前往</button>
+						</a>
+				</ul>
+
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<p>©2021 - Power By<a href="https://www.fzf404.top">&ensp;fzf</a></p>
+	</footer>
+
+
+	<!-- jquery -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+	<!-- 打字机效果 -->
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<!-- 图标 -->
+	<script src="https://at.alicdn.com/t/font_2656325_cx7zut2710b.js"></script>
+	<!-- 幻灯片效果 -->
+	<script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+	<!-- js -->
+	<script src="assets/js/index.js"></script>
+
 </body>
 
 </html>

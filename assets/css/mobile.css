@@ -1,0 +1,21 @@
+@media only screen and (max-width:750px) {
+
+	.nav .nav-menu,
+	.nav .nav-items {
+		flex-direction: column;
+	}
+
+	.nav .toggle-collapse {
+		display: initial;
+	}
+
+	.collapse {
+		height: 24rem;
+	}
+}
+
+@media only screen and (max-width:1000px) {
+	.friend {
+		grid-template: 1fr 1fr/100% !important;
+	}
+}
