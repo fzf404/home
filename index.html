@@ -1,59 +1,23 @@
-<!--
- * @Author: fzf404
- * @Date: 2021-10-11 13:53:36
- * @LastEditTime: 2022-02-02 19:52:49
- * @Description: 主页
--->
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.8" />
     <title>fzf404 | 首页</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/web-themes@0.2.9/simple/common.css" />
-    <script src="https://cdn.jsdelivr.net/npm/web-themes@0.2.9/simple/theme.js"></script>
-    <script src="theme.js"></script>
+    <link rel="icon" type="image/svg+xml" href="https://img.fzf404.art/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 百度统计 -->
     <script>
       var _hmt = _hmt || []
       ;(function () {
         var hm = document.createElement('script')
-        hm.src = 'https://hm.baidu.com/hm.js?ce6f627f4d9496882b6dff4394398ed9'
+        hm.src = 'https://hm.baidu.com/hm.js?4ad9405b84bf7ce673314a3925466b77'
         var s = document.getElementsByTagName('script')[0]
         s.parentNode.insertBefore(hm, s)
       })()
     </script>
   </head>
-
   <body>
-    <h1>
-      欢迎呀
-      <span class="jump" onclick="onChangeTheme()">🙌</span>
-    </h1>
-
-    <h2>Here's My Home Page 🏠</h2>
-
-    <p>
-      <a class="green-blue" title="关于我" href="about.html">关于我</a>
-      <a class="pink" title="友情链接" href="link.html">友情链接</a>
-      <a class="grey-red" title="旧版主页" href="old.html">旧版主页</a>
-    </p>
-
-    <p>
-      <a class="red" target="_blank" title="Tabox标签页" href="https://tab.fzf404.top/">起始页</a>
-      <a class="orange" target="_blank" title="供同学们使用的服务" href="http://server.fzf404.top/">服务</a>
-      <a class="yellow" target="_blank" title="技术相关笔记" href="https://note.fzf404.top/">笔记</a>
-      <a class="green" target="_blank" title="充满黑历史的写作博客" href="https://blog.fzf404.top/">博客</a>
-      <a class="blue" target="_blank" title="实用小工具" href="https://tools.fzf404.top/">工具</a>
-      <a class="purple" target="_blank" title="计算机通识课教案" href="https://share.fzf404.top/">教案</a>
-    </p>
-
-    <p>
-      <a class="blue-dark" target="_blank" href="https://github.com/fzf404/">Github</a>
-      <a class="green" target="_blank" href="https://www.douban.com/people/169857273/">豆瓣</a>
-      <a class="blue" target="_blank" href="https://space.bilibili.com/66628023/">BiliBili</a>
-      <a class="orange" target="_blank" href="https://www.zhihu.com/people/fzf-78/">知乎</a>
-    </p>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
